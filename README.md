@@ -1,6 +1,6 @@
 # Small-Project
 
-For People asking "why is PFA invisible???" Send them this software kek.
+For People asking "why is PFA invisible???" Send them this software kek.\n
 Was Piano From Above (PFA) working just fine but then suddenly it got invisible after reopening? Yea it's a bug, I believe.
   
   You should be able to fix it manually by
