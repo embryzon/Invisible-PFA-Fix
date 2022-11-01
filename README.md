@@ -9,7 +9,7 @@ Was Piano From Above (PFA) working just fine but then suddenly it got invisible 
   
   You should be able to fix it manually by
   1. Press WIN + R and type "%appdata%", then OK. This opens the AppData Folder.
-  2. Go to "Piano From Above" folder" and open "Config.xml". You may open it on any text editor.
+  2. Go to Piano From Above folder and open Config.xml. You may open it on any text editor.
   3. Find MainLeft="X" (X is any integer and it may be a negative value that's why it is not showing in the foreground).
   4. Change the X value to "0"
   5 Do the same for MainTop="X"
