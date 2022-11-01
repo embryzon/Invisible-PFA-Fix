@@ -18,7 +18,7 @@ Was Piano From Above (PFA) working just fine but then suddenly it got invisible 
   
   Note that PFA should be closed when editing the Config.xml file.
   
-Now, if it happens to you rarely or frequent and you are too lazy to change the values in Config.xml, you can use this program.
+Now, if it happens to you rarely or frequently and you are too lazy to change the values in Config.xml, you can use this program.
 It does the same process as stated above just automatically. 
 
 How to use it?
