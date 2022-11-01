@@ -12,7 +12,7 @@ Was Piano From Above (PFA) working just fine but then suddenly it got invisible 
   2. Go to Piano From Above folder and open Config.xml. You may open it on any text editor.
   3. Find MainLeft="X" (X is any integer and it may be a negative value that's why it is not showing in the foreground).
   4. Change the X value to "0"
-  5 Do the same for MainTop="X"
+  5. Do the same for MainTop="X"
   6. CTRL + S to save, then close the file.
   7. Open PFA. 
   
