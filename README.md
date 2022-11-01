@@ -1,7 +1,7 @@
 # Small-Project
 
 For People asking "why is PFA invisible???" Send them this software kek.
-Was Piano From Above (PFA) working just fine but then suddenly it got invisible? Yea it's a bug, I believe.
+Was Piano From Above (PFA) working just fine but then suddenly it got invisible after reopening? Yea it's a bug, I believe.
   
   You should be able to fix it manually by
   1. Press WIN + R and type "%appdata%". This opens the AppData Folder.
