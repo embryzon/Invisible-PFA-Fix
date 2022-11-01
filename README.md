@@ -22,4 +22,4 @@ Now, if it happens to you rarely or frequently and you are too lazy to change th
 It does the same process as stated above just automatically. 
 
 How to use it?
-You can download the executable file => Close PFA => Run the downloaded executable file => Reopen PFA => Hope it works (do this step in 0.098798 seconds because things happens fast)
+You can download the executable file => Close PFA (if still running) => Run the downloaded executable file => Reopen PFA => Hope it works (do this step in 0.098798 seconds because things happens fast)
