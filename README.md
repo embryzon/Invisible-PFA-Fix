@@ -1,6 +1,8 @@
 # Small-Project
 
-For People asking "why is PFA invisible???" Send them this software kek.
+For People asking "why is PFA invisible but I'm still hearing it plays the Chopin/Godowsky Waterfall Etude MIDI???". 
+
+Send them this software kek.
 
 
 
