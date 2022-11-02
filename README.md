@@ -1,8 +1,7 @@
-# Small-Project
+# PFA Invisible Window Fix
 
-For People asking "why is PFA invisible but I'm still hearing it plays the Chopin/Godowsky Waterfall Etude MIDI???". 
-
-Send them this software kek.
+For People asking "why is PFA invisible but I'm still hearing it plays the Chopin/Godowsky Waterfall Etude MIDI???" or people who are too lazy to access the Config.xml,  
+send them this software kek.
 
 
 
@@ -24,4 +23,4 @@ Now, if it happens to you rarely or frequently and you are too lazy to change th
 It does the same process as stated above just automatically. 
 
 How to use it?
-You can download the executable file => Close PFA (if still running) => Run the downloaded executable file => Reopen PFA => Hope it works (do this step in 0.098798 seconds because things happen fast)
+You can download the executable file (on the Releases)=> Close PFA (if still running) => Run the downloaded executable file => Reopen PFA => Hope it works (do this step in 0.098798 seconds because things happen fast)
