@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 
+void turnToZeros(char *text1, size_t text1_length, const char *PARAM, size_t PARAM_length);
+
 int main(){
-    const char param1 [18]= "MainLeft";
-    const char param2 [9]= "MainTop";
-
-    FILE *fr, *fw;
-    char c; 
-    char *search;
-
+    const char PARAM1 [9]= "MainLeft";
+    const char PARAM2 [8]= "MainTop";
+    char text1[2048];
     int x = 0;
-    char text1[2048], text2[1024];
+    char *point;
+    
+    FILE *fr, *fw;
 
     char * appdata = getenv("APPDATA");
     if (!appdata) {
@@ -33,55 +33,43 @@ int main(){
         system("cls");
         printf("The contents of Config.xml are now: \n");
         
-        //read until end of file and store it in a character array "text"
+    //read until end of file and store it in a character array 
         while (!feof(fr)){
-            c = fgetc(fr);
-            text1[x] = c;
+            text1[x] = fgetc(fr);
             x++;
-            //printf("%c",c);
         }
 
-        text1[strlen(text1)-2]='\0'; //To remove the extra 2 characters at the end that I do not know where it came from
+        text1[strlen(text1)-1]='\0'; //To remove the extra character(s) at the end that I did not know where it came from
 
-        //Change MainLeft="X" to MainLeft="0" +++++++++++++++++TURN THIS INTO A FUNCTION 
-        search = strstr(text1, param1) + 10;
-        
-        strcpy(text2, search);
-        text1[strlen(text1)-strlen(text2)]='\0'; //cuts the whole string removing the length of text 2
+        turnToZeros(text1, strlen(text1), PARAM1, strlen(PARAM1));
+        turnToZeros(text1, strlen(text1), PARAM2, strlen(PARAM2));
 
-        int num = 0;
-        while(text2[num] != '\"'){
-            text2[num] = '0';
-            num++;
-        }
+        printf("%s",text1);
 
-        //concat the strings back ++++++FUNCTION ENDS AT THE NEXT LINE
-        strcat(text1,text2);
-
-        //Change MainTop="X" to MainLeft="0"
-        search = strstr(text1, param2) + 9;
-        
-        strcpy(text2, search);
-        text1[strlen(text1)-strlen(text2)]='\0'; //cuts the whole string removing the length of text 2
-
-        num = 0;
-        while(text2[num] != '\"'){
-            text2[num] = '0';
-            num++;
-        }
-
-        //concat the strings back ++++++FUNCTION ENDS AT THE NEXT LINE
-        strcat(text1,text2);
-        //debug
-        printf("%s\n",text1);
-
-    //Writes the main Config.xml
-    fw = fopen(buffer, "w");
-    fprintf(fw, "%s", text1);
+        //Writes the main Config.xml
+        fw = fopen(buffer, "w");
+        fprintf(fw, "%s", text1);
     }
 
     fclose(fw);
     fclose(fr);
     system("pause"); 
     return 0;
+}
+
+void turnToZeros(char *text1, size_t text1_length, const char *PARAM, size_t PARAM_length){
+    char text2[1024];
+    char *search;
+    search = strstr(text1, PARAM) + PARAM_length + 2;
+    
+    strcpy(text2, search);
+    text1[text1_length-strlen(text2)]='\0'; //cuts the whole string removing the length of text 2
+
+    int num = 0;
+    while(text2[num] != '\"'){
+        text2[num] = '0';
+        num++;
+    }
+
+    strcat(text1,text2);//concat the strings back
 }
