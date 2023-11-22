@@ -27,9 +27,7 @@ int main(){
     if (fr == NULL){
         system("cls");
         printf("Error Loading the File\n");
-    }
-
-    else{
+    } else {
         system("cls");
         printf("The contents of Config.xml are now: \n");
         
